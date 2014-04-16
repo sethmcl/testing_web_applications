@@ -1,0 +1,36 @@
+{
+  "src_folders" : ["demo_app/test/end_to_end"],
+  "output_folder" : "demo_app/test_results/end_to_end",
+  "custom_commands_path" : "",
+  "custom_assertions_path" : "",
+  "globals_path" : "",
+
+  "selenium" : {
+    "start_process" : true,
+    "server_path" : "node_modules/selenium-server/lib/runner/selenium-server-standalone-2.38.0.jar",
+    "log_path" : "",
+    "host" : "127.0.0.1",
+    "port" : 4444
+  },
+
+  "test_settings" : {
+    "default" : {
+      "launch_url" : "http://localhost",
+      "selenium_port"  : 4444,
+      "selenium_host"  : "localhost",
+      "silent": true,
+      "firefox_profile": false,
+      "chrome_driver": "",
+      "ie_driver": "",
+      "screenshots" : {
+        "enabled" : true,
+        "path" : "demo_app/test_results/end_to_end/screenshots"
+      },
+      "desiredCapabilities": {
+        "browserName": "firefox",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true
+      }
+    }
+  }
+}

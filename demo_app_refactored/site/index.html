@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Account</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+  <div id="content">
+    <h1>Create Account</h1>
+    <div id="error"></div>
+    <form id="create-account" action="success.html">
+      <ul>
+        <li>
+          <label for="full-name">Name</label>
+          <input name="full-name" autofocus type="text">
+        </li>
+        <li>
+          <label for="email">E-mail</label>
+          <input name="email" type="text">
+        </li>
+        <li>
+          <label for="password">Password</label>
+          <input name="password" type="password">
+        </li>
+        <li>
+          <label for="confirm-password">Confirm Password</label>
+          <input name="confirm-password" type="password">
+        </li>
+        <li>
+          <input type="submit" value="Register">
+        </li>
+      </ul>
+    </form>
+  </div>
+
+  <script src="js/ValidatedForm.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Account</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+  <div id="content">
+    <h1>Create Account</h1>
+    <div id="error"></div>
+    <form id="create-account" action="success.html">
+      <ul>
+        <li>
+          <label for="full-name">Name</label>
+          <input name="full-name" autofocus type="text">
+        </li>
+        <li>
+          <label for="email">E-mail</label>
+          <input name="email" type="text">
+        </li>
+        <li>
+          <label for="password">Password</label>
+          <input name="password" type="password">
+        </li>
+        <li>
+          <label for="confirm-password">Confirm Password</label>
+          <input name="confirm-password" type="password">
+        </li>
+        <li>
+          <input type="submit" value="Register">
+        </li>
+      </ul>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('create-account').onsubmit = function (e) {
+      var name  = e.target.querySelector('[name=full-name]').value;
+      var email = e.target.querySelector('[name=email]').value;
+      var pwd1  = e.target.querySelector('[name=password]').value;
+      var pwd2  = e.target.querySelector('[name=confirm-password]').value;
+
+      showError('');
+
+      if (name.split(' ').length !== 2) {
+        showError('Please enter first and last name');
+        e.preventDefault();
+        return false;
+      } 
+
+      if (!email.match(/\w*@\w*\.[\w]{1,4}/)) {
+        showError('Invalid E-mail!');
+        e.preventDefault();
+        return false;
+      }
+
+      if (pwd1 !== pwd2) {
+        showError('Passwords must match');
+        e.preventDefault();
+        return false;
+      }
+    };
+
+    function showError(msg) {
+      var errorEl = document.getElementById('error');
+      errorEl.innerHTML = msg;
+    }
+  </script>
+</body>
+</html>

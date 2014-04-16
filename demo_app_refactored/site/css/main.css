@@ -1,0 +1,35 @@
+body {
+  border-top: 20px solid rgb(58, 112, 192);
+  margin: 0;
+  font-size: 130%;
+  background: url(../img/wet_snow.png);
+}
+
+#error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+#content {
+  margin: 20px 60px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+input {
+  display: block;
+  margin-bottom: 20px;
+}
+
+
+input {
+  font-size: 130%;
+  background: #fff;
+}

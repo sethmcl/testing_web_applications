@@ -1,0 +1,23 @@
+{
+  "name": "demo_app",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/venus/bin/venus demo_app_refactored/test/unit",
+    "server": "./node_modules/http-server/bin/http-server -p 9191",
+    "e2e_demo_app": "./node_modules/nightwatch/bin/nightwatch -t demo_app/test/end_to_end/register.js",
+    "e2e_demo_app_refactored": "./node_modules/nightwatch/bin/nightwatch -t demo_app_refactored/test/end_to_end/register.js"
+  },
+  "author": "Seth McLaughlin",
+  "license": "MIT",
+  "dependencies": {
+    "nightwatch": "^0.4.13",
+    "venus": "^2.3.1",
+    "selenium-server": "^2.38.0",
+    "http-server": "^0.6.1"
+  }
+}
