@@ -1,0 +1,29 @@
+#!/usr/bin/env node
+
+var Weather = require('../Weather');
+var argv    = process.argv;
+var city;
+var country;
+var weather;
+
+if (argv.length !== 4) {
+  console.error('usage:', argv[0], argv[1], '<city>', '<country>');
+  process.exit(1);
+}
+
+city    = argv[2];
+country = argv[3];
+weather = new Weather(city, country);
+
+console.log('================================================');
+console.log('Looking up weather for', city, 'in', country, '...');
+
+weather.temperature().then(function (temp) {
+  console.log('================================================');
+  console.log('  Fahrenheit:', temp.f);
+  console.log('  Celsius:', temp.c);
+  console.log('  Kelvin:', temp.k);
+  console.log();
+  process.exit(0);
+});
+

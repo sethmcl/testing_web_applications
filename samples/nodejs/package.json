@@ -1,0 +1,19 @@
+{
+  "name": "nodejs",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test/unit --recursive"
+  },
+  "author": "Seth McLaughlin",
+  "license": "MIT",
+  "devDependencies": {
+    "proxyquire": "^0.6.0",
+    "mocha": "^1.18.2"
+  },
+  "dependencies": {
+    "q": "^1.0.1",
+    "request": "^2.34.0"
+  }
+}
