@@ -1,0 +1,22 @@
+{
+  "name": "weather_app",
+  "version": "0.0.0",
+  "homepage": "https://github.com/sethmcl/testing_web_applications",
+  "description": "A simple weather app.",
+  "authors": [
+    "Seth McLaughlin <s@sethmcl.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "static_assets/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "mustache": "~0.8.1"
+  }
+}

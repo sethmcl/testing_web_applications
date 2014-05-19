@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="boston"
+             errors="0"
+             failures="0"
+             tests="2">
+  
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="Check Boston Weather" package="boston" skipped="0"
+    tests="2" time="" timestamp="">
+    
+    
+      <testcase name="Testing if the page title equals &quot;Weather!&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Assertion passed: boston, us">
+        
+        
+      </testcase>
+    
+    
+    </testsuite>
+  
+</testsuites>

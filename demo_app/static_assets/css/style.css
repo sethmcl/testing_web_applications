@@ -1,0 +1,58 @@
+html {
+   background             : url(/img/dark.png) no-repeat center center fixed;
+  -webkit-background-size : cover;
+  -moz-background-size    : cover;
+  -o-background-size      : cover;
+  background-size         : cover;
+  zoom: 3;
+}
+
+#weather {
+  list-style-type : none;
+  padding         : 10px;
+  background      : rgba(0, 0, 0, .5);
+  width           : 300px;
+  height          : 120px;
+  border-radius   : 10px;
+  font-family     : Helvetica, Sans-Serif;
+  text-align      : center;
+
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin: -50px 0 0 -150px;
+
+}
+
+[data-role="temperature"] {
+  color     : #fff;
+  font-size : 300%;
+
+}
+
+[data-role="location"] {
+  color     : rgba(255, 255, 255, .5);
+  font-size : 200%;
+}
+
+[data-role="last-updated"] {
+  color     : rgba(255, 255, 255, .3);
+  font-size : 80%;
+}
+
+[data-role="settings"] {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  left: 0;
+}
+
+[data-role="settings"].state-hidden {
+  display: none;
+}
+
+input[type=submit] {
+  display: block;
+  position: absolute;
+  opacity: 0;
+}

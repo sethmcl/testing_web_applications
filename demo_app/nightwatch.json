@@ -1,6 +1,6 @@
 {
-  "src_folders" : ["demo_app/test/end_to_end"],
-  "output_folder" : "demo_app/test_results/end_to_end",
+  "src_folders" : ["test/end_to_end"],
+  "output_folder" : "test/end_to_end/results",
   "custom_commands_path" : "",
   "custom_assertions_path" : "",
   "globals_path" : "",
@@ -24,7 +24,7 @@
       "ie_driver": "",
       "screenshots" : {
         "enabled" : true,
-        "path" : "demo_app/test_results/end_to_end/screenshots"
+        "path" : "test/end_to_end/screenshots"
       },
       "desiredCapabilities": {
         "browserName": "firefox",

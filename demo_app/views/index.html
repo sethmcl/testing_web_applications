@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather!</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+<body>
+  <div id="widget"></div>
+  <script type="template/mustache" data-template="weather">
+    <ul id="weather">
+      {{#temp}}
+      <li data-role="temperature">{{temp.f}}&deg; F</li>
+      <li data-role="location">
+        {{city}}, {{country}}
+      </li>
+      <li data-role="last-updated">last updated {{last_updated}}</li>
+      {{/temp}}
+      <li data-role="settings"{{#temp}}class="state-hidden"{{/temp}}>
+        <form action="/weather" method="GET">
+          <input id="city" name="city" placeholder="city" type="text">
+          <input id="country" name="country" placeholder="country" type="text">
+          <input type="submit">
+        </form>
+      </li>
+    </ul>
+  </script>
+  <script src="/components/jquery/dist/jquery.min.js"></script>
+  <script src="/components/mustache/mustache.js"></script>
+  <script src="/js/WeatherWidget.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

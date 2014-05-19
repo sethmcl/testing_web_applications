@@ -1,6 +1,6 @@
 var proxyquire = require('proxyquire');
-var mock       = require('../mock/mockRequest');
-var Weather    = proxyquire('../../Weather', { request: mock.request });
+var mock       = require('../../mock/mockRequest');
+var Weather    = proxyquire('../../../lib/Weather', { request: mock.request });
 var assert     = require('assert');
 
 describe('Weather module', function () {
