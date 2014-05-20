@@ -22,6 +22,7 @@ Weather.prototype.baseApiUrl = 'http://api.openweathermap.org/data/2.5/weather?'
  * @method buildApiUrl
  * @param {string} city - the name of the city to get weather data for
  * @param {string} country - the name of the country to get weather data for
+ * @return {string} weather API JSON url
  */
 Weather.prototype.buildApiUrl = function (city, country) {
   var location = [city, country].join(',');

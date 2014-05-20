@@ -18,11 +18,3 @@ module.exports = {
     // .end();
   }
 };
-
-module.exports = {
-  'Check Boston Weather': function (browser) {
-    browser.url('http://www.modern.ie')
-           .assert.title('Interoperability, Browser & Cross Platform Testing | Modern.IE')
-           .end();
-  }
-};
