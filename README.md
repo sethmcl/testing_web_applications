@@ -7,7 +7,7 @@ Slide deck: http://www.slideshare.net/sethmcl/testing-web-applications-34887514
 `demo_app` contains the sample weather app project
 
 ### First step
-Ensure you have [node.js](http://www.nodejs.org) installed, and then run `npm install` from the repository root directory.
+Ensure you have [node.js](http://www.nodejs.org) installed, and then run `npm install` from the `demo_app` directory.
 
 ### Demo Server
 To start the demo server, simply run `npm start`
